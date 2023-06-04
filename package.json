@@ -22,26 +22,33 @@
       "unicorn/prefer-module": 0,
       "no-mixed-operators": 0,
       "complexity": 0,
-      "unicorn/numeric-separators-style": 0
+      "unicorn/numeric-separators-style": 0,
+      "no-bitwise": 0
     }
   },
   "files": [
     "LICENSE",
     "index.js"
   ],
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "pretest": "xo",
     "test": "mocha"
   },
   "engines": {
-    "node": ">=12.5.0"
+    "node": ">=12.17.0"
   },
   "dependencies": {
     "color-convert": "^2.0.1",
-    "color-string": "^1.9.0"
+    "color-string": "^1.9.1"
   },
   "devDependencies": {
-    "mocha": "9.0.2",
-    "xo": "0.42.0"
+    "mocha": "^10.2.0",
+    "xo": "0.54.2"
+  },
+  "exports": {
+    ".": "./index.js"
   }
 }

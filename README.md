@@ -18,7 +18,7 @@ $ npm install color
 
 ## Usage
 ```js
-const Color = require('color');
+import Color from 'color';
 ```
 
 ### Constructors
